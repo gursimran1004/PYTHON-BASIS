@@ -10,12 +10,11 @@ buttons = [[None for _ in range(3)] for _ in range(3)]
 
 def check_winner():
     for i in range(3):
-        # Rows and Columns
         if board[i][0] == board[i][1] == board[i][2] != "":
             return True
         if board[0][i] == board[1][i] == board[2][i] != "":
             return True
-    # Diagonals
+    
     if board[0][0] == board[1][1] == board[2][2] != "":
         return True
     if board[0][2] == board[1][1] == board[2][0] != "":

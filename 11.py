@@ -49,5 +49,5 @@ def play_game():
     print_board()
     print("It's a draw!")
 
-# Start the game
+
 play_game()
